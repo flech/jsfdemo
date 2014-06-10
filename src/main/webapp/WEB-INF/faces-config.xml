@@ -6,6 +6,25 @@
       http://java.sun.com/xml/ns/javaee
       http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
 
+
+	<managed-bean>
+<managed-bean-name>Admin</managed-bean-name>
+<managed-bean-class>com.example.jsfdemo.domain.Admin</managed-bean-class>
+<managed-bean-scope>session</managed-bean-scope>
+</managed-bean>
+	<managed-bean>
+<managed-bean-name>Entry</managed-bean-name>
+<managed-bean-class>com.example.jsfdemo.domain.Entry</managed-bean-class>
+<managed-bean-scope>session</managed-bean-scope>
+</managed-bean>
+	<managed-bean>
+<managed-bean-name>Manager</managed-bean-name>
+<managed-bean-class>com.example.jsfdemo.service.Manager</managed-bean-class>
+<managed-bean-scope>application</managed-bean-scope>
+</managed-bean>
+
+
+
 	<application>
 		<resource-bundle>
 			<base-name>com.example.jsfdemo.messages</base-name>

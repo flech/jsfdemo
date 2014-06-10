@@ -2,25 +2,40 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
+	 xmlns:p="http://primefaces.org/ui"  
 	xmlns:h="http://java.sun.com/jsf/html">
+	
+	
+
+   
   <div>
-	<h:form>
+<h:form> 
+
 	  <ul>
-		<li>
+		 <li>
 		  <h:commandLink action="home?faces-redirect=true">
-			<h:outputText value="#{msg.linkHome}" />
+			 <h:outputText value="#{msg.sg}" />
+		  </h:commandLink>
+		</li>
+
+		  <li>
+		  <h:commandLink action="addEntry?faces-redirect=true">
+			 <h:outputText value="#{msg.addEntry}" />
+		  </h:commandLink>
+		</li>
+			<li>
+		  <h:commandLink action="showWpisy?faces-redirect=true">
+			 <h:outputText value="#{msg.showWpisy}" />
 		  </h:commandLink>
 		</li>
 		<li>
-		  <h:commandLink action="add?faces-redirect=true">
-			<h:outputText value="#{msg.personAddLabel}" />
-		  </h:commandLink></li>
-		<li>
-		  <h:commandLink action="showPersons?faces-redirect=true">
-			 <h:outputText value="#{msg.personAllLabel}" />
+		  <h:commandLink action="showWpisy?faces-redirect=true">
+			 <h:outputText value="#{msg.PA}" />
 		  </h:commandLink>
 		</li>
 	</ul>
    </h:form>
+
+
   </div>
 </ui:composition>
