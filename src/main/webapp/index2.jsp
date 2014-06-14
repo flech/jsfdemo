@@ -1,0 +1,1 @@
+<% response.sendRedirect("addEntry.jsf"); %>

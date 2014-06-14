@@ -3,14 +3,12 @@
 <ui:define name="content">
 <h:form>
 <h:panelGrid columns="2">
-<h:outputText value="#{msg.nick}"/>
-<p:inputText value="#{Entry.nick}" required="true"/>
 
 </h:panelGrid>
- <h3>Twoj wpis</h3>
-    <p:inputTextarea rows="5" cols="30" counter="display" maxlength="255" value="#{Entry.wpis}" required="true" counterTemplate="{0} characters remaining." autoResize="false" />
-    <h:outputText id="display" />
-<h:commandButton value="Add Entry" action="#{Manager.addEntry(Entry.nick, Entry.wpis)}"/>
+ <h4>Podaj numer wpisu do usunieca.</h4>
+     <h:outputLabel for="minMax" value="Min/Max: " />
+        <p:spinner id="minMax" value="#{number}" min="0" max="#{Manager.db1.size()-1}" />
+<h:commandButton value="Usun wpis" action="#{Manager.deleteEntry(number)}"/>
 <h:panelGrid>
 <h:messages showDetail="#{true}" showSummary="#{false}"/>
 </h:panelGrid>

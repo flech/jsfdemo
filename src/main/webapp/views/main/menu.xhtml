@@ -11,29 +11,15 @@
   <div>
 <h:form> 
 
-	  <ul>
-		 <li>
-		  <h:commandLink action="home?faces-redirect=true">
-			 <h:outputText value="#{msg.sg}" />
-		  </h:commandLink>
-		</li>
-
-		  <li>
-		  <h:commandLink action="addEntry?faces-redirect=true">
-			 <h:outputText value="#{msg.addEntry}" />
-		  </h:commandLink>
-		</li>
-			<li>
-		  <h:commandLink action="showWpisy?faces-redirect=true">
-			 <h:outputText value="#{msg.showWpisy}" />
-		  </h:commandLink>
-		</li>
-		<li>
-		  <h:commandLink action="showWpisy?faces-redirect=true">
-			 <h:outputText value="#{msg.PA}" />
-		  </h:commandLink>
-		</li>
-	</ul>
+	<p:menu>
+    
+        <p:submenu label="MENU">
+            <p:menuitem value="Strona glowna" action="home?faces-redirect=true" icon="ui-icon-star" />
+            <p:menuitem value="Dodaj wpis" action="addEntry?faces-redirect=true" icon="ui-icon-star" />
+            <p:menuitem value="Pokaz ksiege gosci" action="showWpisy?faces-redirect=true" icon="ui-icon-star" />
+            <p:menuitem value="Zaloguj do panelu administratora" action="longin?faces-redirect=true" icon="ui-icon-star" />
+        </p:submenu>
+    </p:menu>
    </h:form>
 
 

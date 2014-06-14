@@ -8,8 +8,8 @@
 
 
 	<managed-bean>
-<managed-bean-name>Admin</managed-bean-name>
-<managed-bean-class>com.example.jsfdemo.domain.Admin</managed-bean-class>
+<managed-bean-name>Administator</managed-bean-name>
+<managed-bean-class>com.example.jsfdemo.domain.Administator</managed-bean-class>
 <managed-bean-scope>session</managed-bean-scope>
 </managed-bean>
 	<managed-bean>
